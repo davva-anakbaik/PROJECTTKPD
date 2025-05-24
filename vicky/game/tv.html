@@ -1,0 +1,131 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Tokopedia Card Payment
+  </title>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom select arrow for Bootstrap 4 */
+   select.custom-select {
+     background-image: url("data:image/svg+xml;charset=US-ASCII,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23666' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+     background-repeat: no-repeat;
+     background-position: right 0.75rem center;
+     background-size: 0.65em auto;
+     padding-right: 2rem;
+   }
+   /* Smaller font sizes for form elements */
+   .form-control, .custom-select {
+     font-size: 0.875rem;
+   }
+   label {
+     font-size: 0.75rem;
+     font-weight: 600;
+     color: #6B7280; /* Tailwind gray-500 */
+   }
+   .info-icon {
+     color: #6B7280;
+     font-size: 0.75rem;
+     margin-left: 0.25rem;
+   }
+   .info-text {
+     font-size: 0.625rem;
+     color: #9CA3AF; /* Tailwind gray-400 */
+   }
+   .alert-custom {
+     background-color: #D9F0D9;
+     border: 1px solid #00A650;
+     color: #004D00;
+     font-size: 0.75rem;
+     line-height: 1.2;
+   }
+   .btn-disabled {
+     background-color: #D9E3F5 !important;
+     color: #A9B4D6 !important;
+     cursor: not-allowed !important;
+     font-weight: 600;
+     font-size: 0.875rem;
+   }
+   .promo-link {
+     font-size: 0.625rem;
+     color: #00A650;
+     text-decoration: none;
+   }
+   .promo-link:hover {
+     text-decoration: underline;
+   }
+   @media (min-width: 768px) {
+     .form-control, .custom-select {
+       font-size: 1rem;
+     }
+     label {
+       font-size: 0.875rem;
+     }
+     .alert-custom {
+       font-size: 0.875rem;
+     }
+     .btn-disabled {
+       font-size: 1rem;
+     }
+   }
+  </style>
+ </head>
+ <body class="bg-white font-sans text-gray-900">
+  <div class="container py-4">
+   <div class="mb-4">
+    <div class="text-right mt-2">
+     <a class="promo-link" href="#">
+      Lihat Semua Promo
+     </a>
+    </div>
+   </div>
+   <form>
+    <h2 class="font-weight-semibold text-dark mb-3" style="font-size: 1rem; font-weight: 600;">
+     Bayar tagihan Internet &amp; TV Kabel kamu di Tokopedia
+    </h2>
+    <div class="form-group">
+     <label for="tvKabelSelect">
+      Layanan TV Kabel
+     </label>
+     <select class="custom-select" id="tvKabelSelect" aria-label="Layanan TV Kabel">
+      <option selected="">
+       First Media
+      </option>
+     </select>
+    </div>
+    <div class="form-group">
+     <label for="nomorPelanggan">
+      Nomor Pelanggan TV Kabel
+      <i class="fas fa-info-circle info-icon" aria-hidden="true"></i>
+     </label>
+     <input aria-describedby="nomorPelangganHelp" class="form-control" id="nomorPelanggan" placeholder="Contoh: 1230123123" type="text"/>
+     <small class="d-block text-right mt-1">
+      <img alt="FEST logo small" height="15" src="https://storage.googleapis.com/a1aa/image/3e874933-da23-45af-2295-80d510ccf73e.jpg" width="40"/>
+     </small>
+    </div>
+    <div class="alert alert-custom rounded">
+     <strong>
+      Keterangan
+     </strong>
+     <br/>
+     Sehubungan dengan migrasi user secara bertahap dari First Media ke XL Home/XL Satu:
+     <br/>
+     1. User First Media akan dilakukan migrasi transaksi secara berkala hingga bulan Juni 2025 ke Operator XL Home/XL Satu dengan nomor pelanggan yang masih sama.
+     <br/>
+     2. Untuk User yang sudah dimigrasi ke XL Home, Mohon untuk bertransaksi dengan memilih operator XL Home/XL Satu pada Menu Operator Tokopedia.
+     <br/>
+     3. Tambahan informasi, Untuk pengguna fitur Bayar Otomatis, untuk harap mendaftarkan ulang tagihannya dengan operator yang benar.
+    </div>
+    <button class="btn btn-disabled btn-block" disabled="" type="submit">
+     Bayar
+    </button>
+   </form>
+  </div>
+  <script crossorigin="anonymous" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js">
+  </script>
+ </body>
+</html>

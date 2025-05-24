@@ -1,0 +1,222 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Beli Token atau Bayar Tagihan Listrik
+  </title>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom radio buttons */
+   .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #047857;
+    border-color: #047857;
+   }
+   .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: white;
+   }
+   .custom-control-label::before {
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 0.25rem;
+    left: 0;
+   }
+   .custom-control-label::after {
+    top: 0.55rem;
+    left: 0.3rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+   }
+   /* Smaller font for nominal amounts */
+   .nominal-amount {
+    font-size: 0.625rem;
+    color: #6b7280;
+   }
+   .nominal-value {
+    font-size: 0.75rem;
+    font-weight: 600;
+   }
+   /* Disabled buy button style */
+   .btn-disabled {
+    background-color: #e0e7ff;
+    color: #a5b4fc;
+    pointer-events: none;
+    font-weight: 600;
+   }
+   /* Input icon container */
+   .input-icon {
+    position: relative;
+   }
+   .input-icon img {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+   }
+   /* Border bottom only for input */
+   .border-bottom-only {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-radius: 0 !important;
+   }
+  </style>
+ </head>
+ <body class="bg-white text-dark font-sans p-4">
+  <div class="container" style="max-width: 900px;">
+   <h2 class="font-weight-bold mb-4" style="font-size: 1.125rem;">
+    Beli Token atau Bayar Tagihan Listrik
+   </h2>
+   <form>
+    <fieldset class="mb-4">
+     <legend class="small font-weight-bold text-secondary mb-2">
+      Jenis Produk Listrik
+     </legend>
+     <div class="custom-control custom-radio custom-control-inline">
+      <input checked="" class="custom-control-input" id="token-listrik" name="jenis-produk" type="radio" value="token-listrik"/>
+      <label class="custom-control-label font-weight-bold text-dark" for="token-listrik" style="font-size: 0.75rem; cursor:pointer;">
+       Token Listrik
+      </label>
+     </div>
+     <div class="custom-control custom-radio custom-control-inline">
+      <input class="custom-control-input" id="tagihan-listrik" name="jenis-produk" type="radio" value="tagihan-listrik"/>
+      <label class="custom-control-label text-dark" for="tagihan-listrik" style="font-size: 0.75rem; cursor:pointer;">
+       Tagihan Listrik
+      </label>
+     </div>
+     <div class="custom-control custom-radio custom-control-inline">
+      <input class="custom-control-input" id="pln-non-taglis" name="jenis-produk" type="radio" value="pln-non-taglis"/>
+      <label class="custom-control-label text-dark" for="pln-non-taglis" style="font-size: 0.75rem; cursor:pointer;">
+       PLN Non-Taglis
+      </label>
+     </div>
+    </fieldset>
+    <div class="form-group mb-4">
+     <label class="small font-weight-bold text-secondary d-flex align-items-center" for="meter-id" style="gap: 0.25rem;">
+      No. Meter/ID Pel
+      <i class="fas fa-info-circle text-secondary" style="font-size: 0.75rem;"></i>
+     </label>
+     <div class="input-icon">
+      <input class="form-control border-bottom-only text-secondary" id="meter-id" name="meter-id" placeholder="Contoh 1122334455" style="padding-right: 2.5rem;" type="text"/>
+      <img alt="Yellow square with red and blue lightning bolt icon" src="https://storage.googleapis.com/a1aa/image/698d82ba-7a62-445f-7d28-bccf578b8474.jpg"/>
+     </div>
+    </div>
+    <div class="mb-4">
+     <label class="small text-secondary d-block mb-2">
+      Nominal
+     </label>
+     <div class="row">
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-success btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         20rb
+        </div>
+        <div class="nominal-amount">
+         Rp20.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         50rb
+        </div>
+        <div class="nominal-amount">
+         Rp50.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         100rb
+        </div>
+        <div class="nominal-amount">
+         Rp100.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         200rb
+        </div>
+        <div class="nominal-amount">
+         Rp200.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         500rb
+        </div>
+        <div class="nominal-amount">
+         Rp500.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         1jt
+        </div>
+        <div class="nominal-amount">
+         Rp1.000.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         5jt
+        </div>
+        <div class="nominal-amount">
+         Rp5.000.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         10jt
+        </div>
+        <div class="nominal-amount">
+         Rp10.000.000
+        </div>
+       </button>
+      </div>
+      <div class="col-6 col-md-2 mb-2 px-1">
+       <button class="btn btn-outline-secondary btn-block p-3" type="button" style="font-size: 0.75rem;">
+        <div class="nominal-value">
+         50jt
+        </div>
+        <div class="nominal-amount">
+         Rp50.000.000
+        </div>
+       </button>
+      </div>
+     </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center">
+     <div>
+      <div class="small font-weight-bold text-secondary mb-1">
+       Harga
+      </div>
+      <div class="font-weight-bold" style="font-size: 1.25rem;">
+       Rp20.000
+      </div>
+     </div>
+     <button class="btn btn-disabled px-5 py-3" disabled="" type="submit">
+      Beli
+     </button>
+    </div>
+   </form>
+  </div>
+ </body>
+</html>
