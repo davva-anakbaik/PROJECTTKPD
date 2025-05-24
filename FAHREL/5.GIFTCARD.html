@@ -1,0 +1,169 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Tokopedia Gift Card Info</title>
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+   .card-hover:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+   .faq-button {
+      background: none;
+      border: none;
+      width: 100%;
+      text-align: left;
+      padding: 0;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+   .faq-button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+   .faq-text {
+      font-size: 0.75rem;
+      color: #4B5563;
+      margin-top: 0.25rem;
+    }
+   .footer-text {
+      font-size: 0.75rem;
+      color: #6B7280;
+    }
+   .btn-link-custom {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #6B7280;
+      background: none;
+      border: none;
+      padding: 0;
+    }
+   .btn-link-custom:hover, .btn-link-custom:focus {
+      color: #374151;
+      text-decoration: none;
+      outline: none;
+      box-shadow: none;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black">
+  <main class="container my-4" style="max-width: 600px;">
+   <!-- Card -->
+   <a class="d-flex align-items-center border rounded p-3 mb-4 card-hover text-decoration-none" href="#">
+    <div class="d-flex justify-content-center align-items-center rounded-circle bg-light text-secondary" style="width:48px; height:48px;">
+     <i class="fas fa-gift fa-lg"></i>
+    </div>
+    <div class="flex-grow-1 ml-3">
+     <h3 class="font-weight-bold mb-1" style="font-size: 0.875rem; color: #000;">Corporate Gift Card</h3>
+     <p class="mb-0" style="font-size: 0.75rem; color: #000000cc;">Praktis kirim hadiah ke banyak karyawan atau partner</p>
+    </div>
+    <div class="text-secondary">
+     <i class="fas fa-chevron-right"></i>
+    </div>
+   </a>
+   <!-- FAQ Section -->
+   <section>
+    <h2 class="font-weight-bold mb-4" style="font-size: 1.125rem; color: #000;">Butuh info lebih lanjut?</h2>
+    <div class="border-bottom pb-3 mb-3">
+     <button aria-expanded="true" class="faq-button" type="button" onclick="toggleFaq(this)">
+      Apa itu Gift Card?
+      <i class="fas fa-chevron-up"></i>
+     </button>
+     <p class="faq-text" style="display: block;">
+      Gift card, atau yang dapat diterjemahkan secara harfiah menjadi kartu hadiah, merupakan produk berupa kartu bernilai tertentu, yang dikeluarkan oleh sebuah brand atau perusahaan sebagai pengganti uang saat melakukan transaksi pembelian suatu produk atau jasa. Gift card biasanya dapat digunakan untuk pembelian atau transaksi di toko yang mengeluarkannya, dan berlaku dalam jangka waktu tertentu. Kini, Tokopedia telah menghadirkan gift card yang dapat digunakan secara praktis dan mudah. Gunakan gift card untuk membeli produk dari jutaan toko online atau membayar aneka tagihan di Tokopedia.
+     </p>
+    </div>
+    <div class="border-bottom pb-3 mb-3">
+     <button aria-expanded="false" class="faq-button" type="button" onclick="toggleFaq(this)">
+      Apa Keuntungan Menggunakan Gift Card Tokopedia?
+      <i class="fas fa-chevron-down"></i>
+     </button>
+    </div>
+    <div class="border-bottom pb-3 mb-4">
+     <button aria-expanded="false" class="faq-button" type="button" onclick="toggleFaq(this)">
+      Tokopedia Gift Card bisa digunakan untuk apa saja?
+      <i class="fas fa-chevron-down"></i>
+     </button>
+    </div>
+    <div class="text-center mb-4">
+     <button class="btn-link-custom" type="button">Lihat Selengkapnya</button>
+    </div>
+   </section>
+   <hr class="mb-4" style="border-color: #E5E7EB;"/>
+   <footer class="footer-text mb-4">
+    Tokopedia Care | Syarat &amp; Ketentuan | Kebijakan Privasi
+   </footer>
+   <section>
+    <p class="font-weight-bold mb-2" style="font-size: 0.75rem;">Gunakan Aplikasi Tokopedia</p>
+    <div class="d-flex flex-wrap">
+     <a aria-label="Download on Google Play Store" class="mr-2 mb-2" href="#">
+      <img alt="Google Play Store badge with Google Play logo and text 'GET IT ON Google Play'" height="40" src="https://storage.googleapis.com/a1aa/image/209557d4-2fcf-42c1-4cdb-98b8688e54cf.jpg" width="110"/>
+     </a>
+     <a aria-label="Download on Apple App Store" class="mr-2 mb-2" href="#">
+      <img alt="Apple App Store badge with Apple logo and text 'Download on the App Store'" height="40" src="https://storage.googleapis.com/a1aa/image/f44b4c4f-5def-4813-066d-9204475c4d02.jpg" width="110"/>
+     </a>
+     <a aria-label="Download on Huawei AppGallery" class="mb-2" href="#">
+      <img alt="Huawei AppGallery badge with Huawei logo and text 'EXPLORE IT ON AppGallery'" height="40" src="https://storage.googleapis.com/a1aa/image/3e613b9b-61b1-40bf-e61b-74e6648937bd.jpg" width="110"/>
+     </a>
+    </div>
+   </section>
+  </main>
+  <script crossorigin="anonymous" integrity="sha384-b0UglyR+jN6Ck+6Y5T2mFQZ6jIW3" src="https://code.jquery.com/jquery-3.5.1.slim.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
+  </script>
+  <script crossorigin="anonymous" integrity="sha384-LtrjvnR4/Jqs6hJv+6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+  <script>
+   function toggleFaq(button) {
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      const icon = button.querySelector("i");
+      const parent = button.parentElement;
+
+      // Close all FAQ answers
+      document.querySelectorAll("section > div").forEach((div) => {
+        const btn = div.querySelector("button");
+        btn.setAttribute("aria-expanded", "false");
+        const btnIcon = btn.querySelector("i");
+        btnIcon.classList.remove("fa-chevron-up");
+        btnIcon.classList.add("fa-chevron-down");
+        const p = div.querySelector("p");
+        if (p) {
+          p.style.display = "none";
+        }
+      });
+
+      if (!expanded) {
+        button.setAttribute("aria-expanded", "true");
+        icon.classList.remove("fa-chevron-down");
+        icon.classList.add("fa-chevron-up");
+        const p = parent.querySelector("p");
+        if (p) {
+          p.style.display = "block";
+        }
+      }
+    }
+
+    // Initially show the first FAQ answer
+    document.addEventListener("DOMContentLoaded", () => {
+      const firstFaq = document.querySelector("section > div:first-child");
+      if (firstFaq) {
+        const p = firstFaq.querySelector("p");
+        if (p) {
+          p.style.display = "block";
+        }
+      }
+    });
+  </script>
+ </body>
+</html>
