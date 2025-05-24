@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pesan Tiket Kereta Api Online</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-white">
+    <header class="bg-cover bg-center" >
+        <div class="container py-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg mx-auto" style="max-width: 1500px;">
+                <h2 class="text-xl font-bold mb-4">Pesan tiket kereta online di Tokopedia</h2>
+                <form class="row">
+                    <div class="col-md-3 mb-3">
+                        <label for="asal" class="form-label">Asal</label>
+                        <input type="text" class="form-control" id="asal" name="asal" placeholder="Gambir (GMR)"/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="tujuan" class="form-label">Tujuan</label>
+                        <input type="text" class="form-control" id="tujuan" name="tujuan" placeholder="Bandung (BD)"/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="tanggal" class="form-label">Tanggal</label>
+                        <input type="date" class="form-control" id="tanggal" name="tanggal"/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="penumpang" class="form-label">Jumlah Penumpang</label>
+                        <select class="form-control" id="penumpang" name="penumpang">
+                            <option>1 Dewasa</option>
+                            <option>2 Dewasa</option>
+                            <option>3 Dewasa</option>
+                            <option>4 Dewasa</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="mt-4">
+                    <button class="btn btn-success btn-block">Cari Tiket</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container py-12">
+        <section class="text-center mb-12">
+            <h2 class="text-2xl font-bold">Promo tiket kereta api</h2>
+        </section>
+        <section class="text-center mb-12">
+            <h2 class="text-2xl font-bold mb-8">Praktisnya beli tiket kereta api di Tokopedia!</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="gambar/centang.jpg" alt="Pilihan Tiket Terlengkap" class="mb-4" width="100" height="100"/>
+                        <h3 class="text-lg font-semibold">Pilihan Tiket Terlengkap</h3>
+                        <p class="text-gray-600">Dari kereta ekonomi hingga eksekutif, semua ada di Tokopedia!</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="gambar/dompet.png" alt="Transaksi Aman" class="mb-4" width="100" height="100"/>
+                        <h3 class="text-lg font-semibold">Transaksi Aman</h3>
+                        <p class="text-gray-600">Pembayaran dijamin aman dengan teknologi SSL dan 3D Secure.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="gambar/switch.jpg" alt="Beragam Metode Pembayaran" class="mb-4" width="100" height="100"/>
+                        <h3 class="text-lg font-semibold">Beragam Metode Pembayaran</h3>
+                        <p class="text-gray-600">Lebih mudah dengan berbagai pilihan metode pembayaran.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

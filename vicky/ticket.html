@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Flight Booking</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<header class="bg-white shadow-sm">
+    <div class="container py-3 d-flex justify-content-between align-items-center">
+        <div class="h5 mb-0">Travel</div>
+        <nav>
+            <a class="text-secondary mx-2" href="#">Tiket Pesawat</a>
+            <a class="text-secondary mx-2" href="#">Tiket Kereta Api</a>
+            <a class="text-secondary mx-2" href="#">Hotel</a>
+        </nav>
+    </div>
+</header>
+<main class="container py-5">
+    <div class="bg-white p-4 rounded shadow-sm">
+        <h1 class="h4 mb-4">Pesan tiket pesawat dengan harga murah di Tokopedia</h1>
+        <form class="row">
+            <div class="form-group col-md-3">
+                <label for="asal">Asal</label>
+                <input class="form-control" id="asal" type="text" value="Jakarta (CGK)"/>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="tujuan">Tujuan</label>
+                <input class="form-control" id="tujuan" type="text" value="Denpasar (DPS)"/>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="berangkat">Berangkat</label>
+                <input class="form-control" id="berangkat" type="date" value="2025-03-09"/>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="pulang">Pulang</label>
+                <input class="form-control" id="pulang" type="date"/>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="penumpang">Jumlah Penumpang</label>
+                <select class="form-control" id="penumpang">
+                    <option>1 dewasa</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="kelas">Kelas Penerbangan</label>
+                <select class="form-control" id="kelas">
+                    <option>Ekonomi</option>
+                </select>
+            </div>
+            <div class="form-group col-md-3 align-self-end">
+                <button class="btn btn-success w-100" type="submit">Cari</button>
+            </div>
+        </form>
+    </div>
+    <section class="mt-5">
+        <h2 class="h5 mb-4">Pilihan maskapai penerbangan</h2>
+        <div class="row text-center">
+            <div class="col-4 col-md-2 col-lg-1 mb-3">
+                <img alt="Logo of airline 1" class="img-fluid" src="gambar/lion.png"/>
+            </div>
+            <div class="col-4 col-md-2 col-lg-1 mb-3">
+                <img alt="Logo of airline 2" class="img-fluid" src="gambar/garuda logo.png"/>
+            </div>
+            <div class="col-4 col-md-2 col-lg-1 mb-3">
+                <img alt="Logo of airline 3" class="img-fluid" src="gambar/images.png"/>
+            </div>
+
+        </div>
+    </section>
+    <section class="mt-5">
+        <h2 class="h5 mb-4">Cari tiket pesawat jadi mudah lewat Tokopedia</h2>
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <img alt="Icon representing secure transactions" class="img-fluid mb-3" src="gambar/centang.jpg"/>
+                <h3 class="h6">Dijamin Aman</h3>
+                <p class="text-secondary">Transaksimu di Tokopedia dilindungi teknologi SSL & e-ticket akan dikirim langsung ke e-mail, sehingga keamanan datamu terjamin.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <img alt="Icon representing competitive prices" class="img-fluid mb-3" src="gambar/harga-kompetitif-adalah-780x470-3.webp" style="height: 255px;"/>
+                <h3 class="h6">Harga Bersaing</h3>
+                <p class="text-secondary">Tokopedia punya beragam pilihan harga tiket pesawat yang nggak kalah terjangkau, cocok dengan budget dan kebutuhanmu.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <img alt="Icon representing flexible payment options" class="img-fluid mb-3" src="gambar/switch.jpg"/>
+                <h3 class="h6">Bebas Pilih Cara Bayar</h3>
+                <p class="text-secondary">Mulai dari Saldo Tokopedia sampai tunai lewat retail favorit, kamu bisa bayar tiket pesawat sesuai kebutuhanmu.</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <img alt="Icon representing 24/7 support" class="img-fluid mb-3" src="gambar/cs.jpg"/>
+                <h3 class="h6">Siap Membantu 24/7</h3>
+                <p class="text-secondary">Butuh bantuan lebih lanjut dalam memesan tiketmu? Kami siap menangani kendala yang kamu alami kapan saja.</p>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
