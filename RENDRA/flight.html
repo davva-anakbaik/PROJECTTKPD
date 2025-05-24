@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-black-400">
+    <header class="bg-green-600 shadow-sm">
+         <header class="bg-success p-4 d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img alt="Tokopedia logo" class="h-6" height="50" src="img/tokopedia-logo.png~tplv-zr7vqa5nfb-image.image" width="150"/>
+                <nav class="ml-4">
+                    <a class="text-dark mx-1" href="#">Travel</a>
+                    <a class="text-dark mx-1" href="#">Tiket Pesawat</a>
+                    <a class="text-dark mx-1" href="#">Tiket Kereta Api</a>
+                    <a class="text-dark mx-3" href="#">Hotel</a>
+                </nav>
+            </div>
+            <div class="d-flex align-items-center">
+                <a class="text-dark mx-2" href="#">Tentang Tokopedia</a>
+                <a class="text-dark mx-2" href="#">Mitra Tokopedia</a>
+                <a class="text-dark mx-2" href="#">Pusat Seller</a>
+                <a class="text-dark mx-2" href="#">Promo</a>
+                <a class="text-dark mx-2" href="#">Pusat Bantuan</a>
+                <button class="btn btn-success mx-2">Masuk</button>
+                <button class="btn btn-success mx-2">Daftar</button>
+            </div>
+        </div>
+    </header>
+    <main class="container py-4">
+        <div class="bg-white shadow-sm rounded p-4">
+            <h1 class="h4 font-weight-bold mb-4">Pesan tiket pesawat dengan harga murah di Tokopedia</h1>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="asal">Asal</label>
+                    <input type="text" class="form-control" id="asal" value="Jakarta (CGK)">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="tujuan">Tujuan</label>
+                    <input type="text" class="form-control" id="tujuan" value="Denpasar (DPS)">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="berangkat">Berangkat</label>
+                    <input type="date" class="form-control" id="berangkat" value="2025-03-12">
+                </div>
+                <div class="form-group col-md-4">
+                    <div class="form-check mt-4">
+                        <input class="form-check-input" type="checkbox" id="pulang">
+                        <label class="form-check-label" for="pulang">Pulang</label>
+                    </div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="penumpang">Jumlah Penumpang</label>
+                    <select id="penumpang" class="form-control">
+                        <option selected>1 dewasa</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="kelas">Kelas Penerbangan</label>
+                    <select id="kelas" class="form-control">
+                        <option selected>Ekonomi</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4 mt-4">
+                    <button class="btn btn-success mt-2">Cari</button>
+                </div>
+            </div>
+        </div>
+        <section class="mt-5">
+            <h2 class="h5 font-weight-bold mb-4 text-center">Pilihan maskapai penerbangan</h2>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 1" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_dac705fb-9f2b-4e6e-a63c-cbbef9c5e91a.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 2" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_7f755496-e7cd-480d-bcc0-081c84828d37.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 3" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_87064c23-f57a-4e51-bc0f-3d2ca6e34ccf.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 4" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_f8cb0d41-ee3a-452d-b9f4-3df11118ad4c.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 5" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_ff6876db-f307-4dd3-93f0-3640bfa5de22.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 6" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_8d87719f-8552-4f90-8eab-68c4dd8b5317.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 7" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_2a0a7ad0-1e14-4ff9-a97b-ed855603d402.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 8" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_2a0a7ad0-1e14-4ff9-a97b-ed855603d402.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 9" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5512496_35788642-fabd-42b5-9213-2ce87e99c31c.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 10" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5253715_0145d233-fb71-4190-9447-3939364f153b.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 11" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5253715_5fc17fba-2ace-46e3-b37c-c27ce00b72b4.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 12" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5253715_a0284734-551d-40cb-b9d7-eaa5f3221fc5.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 13" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5253715_22010523-5a7f-4a7a-9066-bc80bafd0bfc.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 14" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\7000409_d79f1ebc-06c4-4faa-baf4-48dd5d4af087.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 15" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\5253715_1408e37a-320c-486d-a9c3-f472b9357d89.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 16" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\7000409_741bafb4-23c7-45be-8e2d-fb639a5ae2c5.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 17" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\35880821_913e8778-3c76-4b44-81d8-107e80e85a7e.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 18" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\35880821_913e8778-3c76-4b44-81d8-107e80e85a7e.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 19" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\35880821_913e8778-3c76-4b44-81d8-107e80e85a7e.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 20" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\35880821_913e8778-3c76-4b44-81d8-107e80e85a7e.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 21" class="img-fluid mx-auto d-block" height="50" src=https://images.tokopedia.net/img/attachment/2018/11/5/7000409/7000409_9411e464-d5c4-46af-9e02-a3b83816c01a.png?ect=4g width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 22" class="img-fluid mx-auto d-block" height="50" src=https://images.tokopedia.net/img/attachment/2018/11/5/7000409/7000409_9411e464-d5c4-46af-9e02-a3b83816c01a.png?ect=4g width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 23" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\7000409_d79f1ebc-06c4-4faa-baf4-48dd5d4af087.png width="100"/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-3">
+                    <img alt="Airline logo 24" class="img-fluid mx-auto d-block" height="50" src=c:\Users\acer\Pictures\7000409_d79f1ebc-06c4-4faa-baf4-48dd5d4af087.png width="100"/>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

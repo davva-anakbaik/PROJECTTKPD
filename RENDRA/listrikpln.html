@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up & Tagihan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-light p-4">
+    <div class="container bg-white p-6 rounded-lg shadow-md">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h4 font-weight-bold">Top Up & Tagihan</h1>
+            <a href="#" class="text-success">Lihat Semua</a>
+        </div>
+        <div class="border-bottom mb-4">
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link text-secondary">Pulsa</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary">Paket Data</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary">Flight</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-success border-bottom border-success">Listrik PLN</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-secondary"><i class="fas fa-ellipsis-h"></i></a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <label for="jenis-produk" class="text-secondary">Jenis Produk Listrik</label>
+                <select id="jenis-produk" class="form-control">
+                    <option>Token Listrik</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="nomor-meter" class="text-secondary">No. Meter/ID Pel</label>
+                <input type="text" id="nomor-meter" class="form-control" placeholder="Masukan Nomor">
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="nominal" class="text-secondary">Nominal</label>
+                <select id="nominal" class="form-control">
+                    <option>20rb</option>
+                </select>
+            </div>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-secondary btn-block btn-md">Bayar</button>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
